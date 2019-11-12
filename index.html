@@ -446,8 +446,10 @@
 			console.log('function nexpie connect');
 			var deviceid = document.getElementById("deviceid").value;
 			var devicetoken = document.getElementById("devicetoken").value;
-			var broker_url = document.getElementById("broker_url").value;
-			var port_mqtt = document.getElementById("port_mqtt").value;
+			var broker_url = "mqtt.nexpie.io";
+			var port_mqtt = 443;
+			// var broker_url = document.getElementById("broker_url").value;
+			// var port_mqtt = document.getElementById("port_mqtt").value;
 
 			var options = {
 				host: broker_url,
@@ -559,7 +561,7 @@
 					<div class="login">
 						<h3>DEVICE CONNENT</h3>
 						<form class="login100-form validate-form">
-							<div class="wrap-input100">
+							<!-- <div class="wrap-input100">
 								<span class="label-input100">MQTT URL</span>
 								<input id="broker_url" class="input100" type="text" name="test"
 									placeholder="Enter MQTT Url" value="jupiter.scg.com">
@@ -569,7 +571,7 @@
 								<span class="label-input100">PORT</span>
 								<input id="port_mqtt" class="input100" type="text" name="test"
 									placeholder="Enter Port" value="8084">
-							</div>
+							</div> -->
 
 							<div class="wrap-input100">
 								<span class="label-input100">Device ID</span>
